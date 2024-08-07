@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 250px;
+    background-image: url(img-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textarea {
+    text-align: center;
+    padding: 2rem;
+}
+
+.p1 {
+    color: white;
+    text-transform: capitalize;
+}
+
+.p2 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.button1, .button2 {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 340px;
+    height: 40px;
+    display: flex;
+    margin: 1rem auto;
+}
+
+.button1 {
+    background-color: rgb(65, 216, 208);
+}
+
+.button2 {
+    background-color: rgb(226, 17, 17);
+}
+
+.button1 p, .button2 p {
+    margin-left: 1rem;
+    margin-top: 8.5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.button1 span, .button2 span {
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 8.5px;
+    color: white;
+}
+
+.percentage {
+    color: white;
+}
+
+section {
+    height: 50px;
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+}
+
+.text, .value, .add-btn, select {
+    margin: 8px;
+    height: 30px;
+}
+
+.text {
+    width: 100%;
+    max-width: 270px;
+    border: 1px solid rgba(134, 131, 131, 0);
+}
+
+.text:hover, .value:hover {
+    border: 1px solid rgb(43, 217, 240);
+}
+
+.value {
+    width: 100%;
+    max-width: 70px;
+    border: 1px solid rgba(134, 131, 131, 0);
+}
+
+.add-btn {
+    width: 45px;
+    background-color: rgb(43, 217, 240);
+    border: 1px solid rgb(43, 217, 240);
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    max-width: 95px;
+    cursor: pointer;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+article {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.income, .expenses {
+    width: 100%;
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.content1, .content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content1 h1, .content h1 {
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+
+.content1 h1 {
+    color: rgb(0, 162, 255);
+}
+
+.content h1 {
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 1rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+li span {
+    color: inherit;
+}
+
+.btn_delete, .btn2_delete {
+    height: 17px;
+    width: 17px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .p2 {
+        font-size: 2rem;
+    }
+
+    .button1, .button2 {
+        width: 90%;
+    }
+
+    section {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text, .value, .add-btn, select {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .income, .expenses {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .p2 {
+        font-size: 1.5rem;
+    }
+
+    .button1 p, .button2 p {
+        font-size: 12px;
+    }
+
+    .button1 span, .button2 span {
+        margin-top: 4px;
+        margin-right: 1rem;
+    }
+}
